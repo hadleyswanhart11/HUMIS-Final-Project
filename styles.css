@@ -1,0 +1,203 @@
+body {
+    background-color: #292827;
+    font-family: Arial, Helvetica, sans-serif;
+
+    div.container {
+        min-width: 390px;
+        max-width: 780px;
+        margin: 0 auto;
+        background-color: white;
+
+        header {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        section.middle {
+            padding: 10px;
+            background-image: url('files/uofu_medallion_rt.gif');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+
+            nav {
+                text-align: center;
+                font-size: 10px;
+                text-transform: uppercase;
+
+                a {
+                    color: #000;
+                    border-right: 1px solid black;
+                    padding-right: 5px;
+                    margin-right: 5px;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    img {
+                        vertical-align: middle;
+                    }
+
+                    &:last-of-type {
+                        border-right: none;
+                    }
+                }
+
+                &.drop-down-menu {
+                    margin-top: 10px;
+
+                    select {
+                        width: 100%;
+                    }
+                }
+
+                &.bottom {
+                    text-transform: lowercase;
+                }
+            }
+        }
+
+        div.green-box {
+            min-height: 600px;
+            background-color: #C8CAAF;
+            padding: 10px;
+            margin: 10px 0px 100px;
+            border-radius: 10px;
+
+            aside.left-side {
+                nav {
+                    a {
+                        border-right: none;
+                    }
+                }
+
+                .login {
+                    padding: 200px 0 0 0;
+
+                    img {
+                        display: block;
+                        width: 90%;
+                        height: 90%;
+
+                        &:hover {
+                            background-color: #fff;
+                        }
+                        a.active {
+                            background-color: #505A2F;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+
+            main {
+                background-color: white;
+                padding: 10px;
+
+                img {
+                    width: 100%;
+                }
+
+                .news {
+                    padding: 20px 5px;
+
+                    h2 {
+                        color: #505A2F;
+                        font-size: 25px;
+                        font-weight: normal;
+                        margin: 0 0 15px 0;
+                        padding-bottom: 7px;
+                        border-bottom: 2px dashed #c43733;
+                    }
+
+                    .news-content {
+                        p {
+                            color: #303039;
+                            font-size: 11px;
+                            margin: 0;
+                        }
+
+                        strong {
+                            font-weight: bold;
+                        }
+
+                        a {
+                            display: block;
+                            color: #c43733;
+                            font-size: 12px;
+                            text-decoration: none;
+                            text-align: right;
+                            margin-top: 18px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        footer {
+            background-color: #676E3D;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            padding: 10px 0;
+        }
+
+        @media screen and (width > 600px) {
+
+            section.middle {
+                > nav {
+                    text-align: right;
+
+                    &.drop-down-menu {
+                        display: none;
+                    }
+                }
+
+                div.green-box {
+                    padding: 20px 30px;
+
+                    aside {
+                        &.left-side {
+                            display: block;
+                            float: left;
+                            width: 30%;
+                            border-right: none;
+
+                            nav {
+                                a {
+                                    display: block;
+                                    text-transform: uppercase;
+                                    font-size: 11px;
+                                    color: #505A2F;
+                                    border-right: none;
+                                    border-bottom: 2px solid #505A2F;
+                                    text-decoration: none;
+                                    padding: 10px 0 10px 0;
+
+                                    &:hover {
+                                        background-color: #505A2F;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    main {
+                        float: right;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
